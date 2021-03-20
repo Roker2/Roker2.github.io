@@ -1,0 +1,120 @@
+aside {
+    height:100%;
+    width:160px;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color:#111;
+    padding-top:20px;
+}
+
+a[href^="https://github.com"], a[href^="http://github.com"] {
+    padding-left: 25px;
+    background: url(https://github.com/fluidicon.png) no-repeat left;
+    background-size: 20px;
+}
+
+img[title^="Screenshot"], img[alt^="Screenshot"] {
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+img[title^="Screenshot"]:hover, img[alt^="Screenshot"]:hover {
+    transform: scale(1.5);
+}
+    
+
+aside a, aside li, aside h3 {
+    color: #dbdbdb;
+}
+
+aside a, aside li {
+    font-size:16px;
+}
+
+aside a {
+    text-decoration: none;
+}
+
+aside a:hover {
+    color: #FFFFFF;
+}
+
+main, footer, header {
+    margin-left:160px;
+}
+
+td a {
+    text-decoration: none;
+    color: #2c3136;
+}
+
+td a:visited {
+    color: #343e40;
+}
+
+td a:hover {
+    color: #111111;
+}
+
+td a:focus {
+    animation-name: scaler;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: block;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td.aosp {
+    padding-left: 25px;
+    background: url(https://www.gstatic.com/devrel-devsite/prod/vcf833c74c75e414e6b92dcb5faa0b41ae9c0f8f1752c0c30b6e4ea1d58a58591/androidsource/images/favicon.png) no-repeat left;
+    background-size: 20px;
+}
+
+td.lineageos {
+    padding-left: 25px;
+    background: url(https://www.lineageos.org/images/logo.png) no-repeat left;
+    background-size: 20px;
+}
+
+.rom-name {
+    text-align: center;
+}
+
+.logo:hover {
+    animation-name: looper;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes looper {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scaler {
+    0% {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
