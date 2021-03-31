@@ -118,3 +118,13 @@ td.lineageos {
         transform: scale(1.0);
     }
 }
+
+@media handheld {
+	aside {
+    width:400px;
+	}
+
+	main, footer, header {
+		margin-left:400px;
+	}
+}
